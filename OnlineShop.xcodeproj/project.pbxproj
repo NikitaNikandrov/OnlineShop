@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E50951E929BF93C600666B55 /* UIColor-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50951E829BF93C600666B55 /* UIColor-extension.swift */; };
 		E50951EB29BF97D000666B55 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50951EA29BF97D000666B55 /* Resources.swift */; };
-		E50951ED29BFACED00666B55 /* UIFont-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50951EC29BFACED00666B55 /* UIFont-extension.swift */; };
 		E509520429BFAE7A00666B55 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E50951F029BFAE7800666B55 /* Montserrat-Medium.ttf */; };
 		E509520529BFAE7A00666B55 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E50951F129BFAE7800666B55 /* Montserrat-MediumItalic.ttf */; };
 		E509520629BFAE7A00666B55 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E50951F229BFAE7800666B55 /* Montserrat-ThinItalic.ttf */; };
@@ -60,7 +59,6 @@
 /* Begin PBXFileReference section */
 		E50951E829BF93C600666B55 /* UIColor-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-extension.swift"; sourceTree = "<group>"; };
 		E50951EA29BF97D000666B55 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
-		E50951EC29BFACED00666B55 /* UIFont-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont-extension.swift"; sourceTree = "<group>"; };
 		E50951F029BFAE7800666B55 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.ttf"; path = "../../../../Downloads/Montserrat/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		E50951F129BFAE7800666B55 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-MediumItalic.ttf"; path = "../../../../Downloads/Montserrat/Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
 		E50951F229BFAE7800666B55 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ThinItalic.ttf"; path = "../../../../Downloads/Montserrat/Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				E50951E829BF93C600666B55 /* UIColor-extension.swift */,
-				E50951EC29BFACED00666B55 /* UIFont-extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -373,7 +370,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E50951ED29BFACED00666B55 /* UIFont-extension.swift in Sources */,
 				E598C21329BF8F6C000DCD95 /* RootViewController.swift in Sources */,
 				E50951E929BF93C600666B55 /* UIColor-extension.swift in Sources */,
 				E50951EB29BF97D000666B55 /* Resources.swift in Sources */,
