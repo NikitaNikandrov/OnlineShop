@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E598C1DF29BF8BF9000DCD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1DE29BF8BF9000DCD95 /* AppDelegate.swift */; };
 		E598C1E129BF8BF9000DCD95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1E029BF8BF9000DCD95 /* SceneDelegate.swift */; };
-		E598C1E329BF8BF9000DCD95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1E229BF8BF9000DCD95 /* ViewController.swift */; };
+		E598C1E329BF8BF9000DCD95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1E229BF8BF9000DCD95 /* LoginViewController.swift */; };
 		E598C1E629BF8BF9000DCD95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E598C1E429BF8BF9000DCD95 /* Main.storyboard */; };
 		E598C1E929BF8BF9000DCD95 /* OnlineShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E598C1E729BF8BF9000DCD95 /* OnlineShop.xcdatamodeld */; };
 		E598C1EB29BF8BFD000DCD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E598C1EA29BF8BFD000DCD95 /* Assets.xcassets */; };
@@ -17,6 +17,7 @@
 		E598C1F929BF8BFE000DCD95 /* OnlineShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1F829BF8BFE000DCD95 /* OnlineShopTests.swift */; };
 		E598C20329BF8BFE000DCD95 /* OnlineShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C20229BF8BFE000DCD95 /* OnlineShopUITests.swift */; };
 		E598C20529BF8BFE000DCD95 /* OnlineShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C20429BF8BFE000DCD95 /* OnlineShopUITestsLaunchTests.swift */; };
+		E598C21329BF8F6C000DCD95 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C21229BF8F6C000DCD95 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 		E598C1DB29BF8BF9000DCD95 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E598C1DE29BF8BF9000DCD95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E598C1E029BF8BF9000DCD95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E598C1E229BF8BF9000DCD95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E598C1E229BF8BF9000DCD95 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E598C1E529BF8BF9000DCD95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E598C1E829BF8BF9000DCD95 /* OnlineShop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnlineShop.xcdatamodel; sourceTree = "<group>"; };
 		E598C1EA29BF8BFD000DCD95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		E598C1FE29BF8BFE000DCD95 /* OnlineShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E598C20229BF8BFE000DCD95 /* OnlineShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopUITests.swift; sourceTree = "<group>"; };
 		E598C20429BF8BFE000DCD95 /* OnlineShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E598C21229BF8F6C000DCD95 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +103,9 @@
 		E598C1DD29BF8BF9000DCD95 /* OnlineShop */ = {
 			isa = PBXGroup;
 			children = (
+				E598C21129BF8F48000DCD95 /* Views */,
 				E598C1DE29BF8BF9000DCD95 /* AppDelegate.swift */,
 				E598C1E029BF8BF9000DCD95 /* SceneDelegate.swift */,
-				E598C1E229BF8BF9000DCD95 /* ViewController.swift */,
 				E598C1E429BF8BF9000DCD95 /* Main.storyboard */,
 				E598C1EA29BF8BFD000DCD95 /* Assets.xcassets */,
 				E598C1EC29BF8BFD000DCD95 /* LaunchScreen.storyboard */,
@@ -128,6 +130,15 @@
 				E598C20429BF8BFE000DCD95 /* OnlineShopUITestsLaunchTests.swift */,
 			);
 			path = OnlineShopUITests;
+			sourceTree = "<group>";
+		};
+		E598C21129BF8F48000DCD95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E598C21229BF8F6C000DCD95 /* RootViewController.swift */,
+				E598C1E229BF8BF9000DCD95 /* LoginViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E598C1E329BF8BF9000DCD95 /* ViewController.swift in Sources */,
+				E598C21329BF8F6C000DCD95 /* RootViewController.swift in Sources */,
+				E598C1E329BF8BF9000DCD95 /* LoginViewController.swift in Sources */,
 				E598C1DF29BF8BF9000DCD95 /* AppDelegate.swift in Sources */,
 				E598C1E929BF8BF9000DCD95 /* OnlineShop.xcdatamodeld in Sources */,
 				E598C1E129BF8BF9000DCD95 /* SceneDelegate.swift in Sources */,
