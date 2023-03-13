@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E50951E929BF93C600666B55 /* UIColor-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50951E829BF93C600666B55 /* UIColor-extension.swift */; };
 		E598C1DF29BF8BF9000DCD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1DE29BF8BF9000DCD95 /* AppDelegate.swift */; };
 		E598C1E129BF8BF9000DCD95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1E029BF8BF9000DCD95 /* SceneDelegate.swift */; };
 		E598C1E329BF8BF9000DCD95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1E229BF8BF9000DCD95 /* LoginViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E50951E829BF93C600666B55 /* UIColor-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-extension.swift"; sourceTree = "<group>"; };
 		E598C1DB29BF8BF9000DCD95 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E598C1DE29BF8BF9000DCD95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E598C1E029BF8BF9000DCD95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E50951E629BF933B00666B55 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E50951E729BF934B00666B55 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E50951E729BF934B00666B55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E50951E829BF93C600666B55 /* UIColor-extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E598C1D229BF8BF9000DCD95 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +121,7 @@
 		E598C1DD29BF8BF9000DCD95 /* OnlineShop */ = {
 			isa = PBXGroup;
 			children = (
+				E50951E629BF933B00666B55 /* Helpers */,
 				E598C21129BF8F48000DCD95 /* Views */,
 				E598C1DE29BF8BF9000DCD95 /* AppDelegate.swift */,
 				E598C1E029BF8BF9000DCD95 /* SceneDelegate.swift */,
@@ -273,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E598C21329BF8F6C000DCD95 /* RootViewController.swift in Sources */,
+				E50951E929BF93C600666B55 /* UIColor-extension.swift in Sources */,
 				E598C1E329BF8BF9000DCD95 /* LoginViewController.swift in Sources */,
 				E598C1DF29BF8BF9000DCD95 /* AppDelegate.swift in Sources */,
 				E598C1E929BF8BF9000DCD95 /* OnlineShop.xcdatamodeld in Sources */,
