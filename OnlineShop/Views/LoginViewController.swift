@@ -47,13 +47,36 @@ class LoginViewController: UIViewController {
         return textField
     }()
     
+    private let loginButton: UIButton = {
+        var button = UIButton()
+        button.backgroundColor = Resources.Colors.purple
+        let buttonLabelAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: Resources.Colors.white,
+                                                                    .font: UIFont(name: Resources.Fonts.montserratBold,
+                                                                                  size: 14.4) ?? UIFont.systemFont(ofSize: 14.4, weight:           .regular)]
+        let attributeString = NSMutableAttributedString(string: Resources.LoginStrings.loginButtonString, attributes: buttonLabelAttributes)
+        button.setAttributedTitle(attributeString, for: .normal)
+        button.layer.cornerRadius = 15
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     private let hideButton = HideButton()
     
+    //MARK: Button's actions
+    @objc func loginButtonIsPressed(sender: UIButton!) {
+        
+    }
+    @objc func hideButtonIsPressed(sender: UIButton!) {
+        
+    }
+    
+    //MARK: LiveCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
     }
     
+    //MARK: Methods
     private func configureViewController() {
         view.backgroundColor = Resources.Colors.white
         
@@ -66,6 +89,10 @@ class LoginViewController: UIViewController {
         configurePasswordTextField()
         view.addSubview(passwordTextField)
         setPasswordTextFieldConstraints()
+        
+        view.addSubview(loginButton)
+        setLoginButtonConstraints()
+        addTargets()
     }
     
     private func configurePasswordTextField() {
@@ -75,6 +102,10 @@ class LoginViewController: UIViewController {
         rightView.addSubview(hideButton)
         passwordTextField.rightView = rightView
         passwordTextField.rightViewMode = .always
+    }
+    private func addTargets() {
+        hideButton.addTarget(self, action: #selector(hideButtonIsPressed), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginButtonIsPressed), for: .touchUpInside)
     }
 }
 
@@ -99,6 +130,13 @@ extension LoginViewController {
         passwordTextField.widthAnchor.constraint(equalToConstant: 301).isActive = true
         passwordTextField.topAnchor.constraint(equalTo: firstNameTextField.bottomAnchor, constant: 36.4).isActive = true
         passwordTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+    }
+    
+    private func setLoginButtonConstraints() {
+        loginButton.heightAnchor.constraint(equalToConstant: 47.8).isActive = true
+        loginButton.widthAnchor.constraint(equalToConstant: 300.6).isActive = true
+        loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 103).isActive = true
+        loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
     }
 }
 

@@ -15,6 +15,7 @@ enum Resources {
         static var lightGrey = UIColor(hexString: "E8E8E8")
         static var grey = UIColor(hexString: "7B7B7B")
         static var darkGrey = UIColor(hexString: "A2A2A2")
+        static var purple = UIColor(hexString: "4E55D7")
     }
     
     enum Fonts {
@@ -26,5 +27,6 @@ enum Resources {
         static var titleString = "Welcome back"
         static var firstNameTextHolderString = "First name"
         static var passwordTextHolderString = "Password"
+        static var loginButtonString = "Login"
     }
 }
