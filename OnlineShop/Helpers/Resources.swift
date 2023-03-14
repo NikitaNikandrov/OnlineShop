@@ -14,6 +14,7 @@ enum Resources {
         static var white = UIColor(hexString: "FAF9FF")
         static var lightGrey = UIColor(hexString: "E8E8E8")
         static var grey = UIColor(hexString: "7B7B7B")
+        static var darkGrey = UIColor(hexString: "A2A2A2")
     }
     
     enum Fonts {

@@ -27,6 +27,7 @@
 		E509521429BFAE7A00666B55 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E509520029BFAE7900666B55 /* Montserrat-Black.ttf */; };
 		E509521529BFAE7A00666B55 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E509520129BFAE7900666B55 /* Montserrat-SemiBoldItalic.ttf */; };
 		E509521629BFAE7A00666B55 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E509520229BFAE7A00666B55 /* Montserrat-Light.ttf */; };
+		E509521829C1052100666B55 /* HideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509521729C1052100666B55 /* HideButton.swift */; };
 		E598C1DF29BF8BF9000DCD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1DE29BF8BF9000DCD95 /* AppDelegate.swift */; };
 		E598C1E129BF8BF9000DCD95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1E029BF8BF9000DCD95 /* SceneDelegate.swift */; };
 		E598C1E329BF8BF9000DCD95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1E229BF8BF9000DCD95 /* LoginViewController.swift */; };
@@ -77,6 +78,7 @@
 		E509520029BFAE7900666B55 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.ttf"; path = "../../../../Downloads/Montserrat/Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		E509520129BFAE7900666B55 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBoldItalic.ttf"; path = "../../../../Downloads/Montserrat/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		E509520229BFAE7A00666B55 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Light.ttf"; path = "../../../../Downloads/Montserrat/Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		E509521729C1052100666B55 /* HideButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideButton.swift; sourceTree = "<group>"; };
 		E598C1DB29BF8BF9000DCD95 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E598C1DE29BF8BF9000DCD95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E598C1E029BF8BF9000DCD95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		E509521929C10EB800666B55 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				E509521729C1052100666B55 /* HideButton.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		E598C1D229BF8BF9000DCD95 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +226,7 @@
 		E598C21129BF8F48000DCD95 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E509521929C10EB800666B55 /* SubViews */,
 				E598C21229BF8F6C000DCD95 /* RootViewController.swift */,
 				E598C1E229BF8BF9000DCD95 /* LoginViewController.swift */,
 			);
@@ -371,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E598C21329BF8F6C000DCD95 /* RootViewController.swift in Sources */,
+				E509521829C1052100666B55 /* HideButton.swift in Sources */,
 				E50951E929BF93C600666B55 /* UIColor-extension.swift in Sources */,
 				E50951EB29BF97D000666B55 /* Resources.swift in Sources */,
 				E598C1E329BF8BF9000DCD95 /* LoginViewController.swift in Sources */,

@@ -47,6 +47,8 @@ class LoginViewController: UIViewController {
         return textField
     }()
     
+    private let hideButton = HideButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
@@ -61,8 +63,18 @@ class LoginViewController: UIViewController {
         view.addSubview(firstNameTextField)
         setFirstNameTextFieldConstraints()
         
+        configurePasswordTextField()
         view.addSubview(passwordTextField)
         setPasswordTextFieldConstraints()
+    }
+    
+    private func configurePasswordTextField() {
+        let rightView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        hideButton.frame = CGRect(x: -30.2, y: -7.5, width: 15.6, height: 15.6)
+        hideButton.imageView?.contentMode = .scaleAspectFit
+        rightView.addSubview(hideButton)
+        passwordTextField.rightView = rightView
+        passwordTextField.rightViewMode = .always
     }
 }
 
