@@ -32,7 +32,7 @@
 		E509521D29C240B300666B55 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509521C29C240B300666B55 /* AuthTextField.swift */; };
 		E509521F29CB7F4700666B55 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509521E29CB7F4600666B55 /* TitleLabel.swift */; };
 		E509522129CB846900666B55 /* LogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509522029CB846900666B55 /* LogButton.swift */; };
-		E509522329CB898B00666B55 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509522229CB898B00666B55 /* AuthButton.swift */; };
+		E509522329CB898B00666B55 /* ExtraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509522229CB898B00666B55 /* ExtraButton.swift */; };
 		E598C1DF29BF8BF9000DCD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1DE29BF8BF9000DCD95 /* AppDelegate.swift */; };
 		E598C1E129BF8BF9000DCD95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1E029BF8BF9000DCD95 /* SceneDelegate.swift */; };
 		E598C1E329BF8BF9000DCD95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1E229BF8BF9000DCD95 /* LoginViewController.swift */; };
@@ -88,7 +88,7 @@
 		E509521C29C240B300666B55 /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
 		E509521E29CB7F4600666B55 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		E509522029CB846900666B55 /* LogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogButton.swift; sourceTree = "<group>"; };
-		E509522229CB898B00666B55 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		E509522229CB898B00666B55 /* ExtraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraButton.swift; sourceTree = "<group>"; };
 		E598C1DB29BF8BF9000DCD95 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E598C1DE29BF8BF9000DCD95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E598C1E029BF8BF9000DCD95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 				E509521C29C240B300666B55 /* AuthTextField.swift */,
 				E509521E29CB7F4600666B55 /* TitleLabel.swift */,
 				E509522029CB846900666B55 /* LogButton.swift */,
-				E509522229CB898B00666B55 /* AuthButton.swift */,
+				E509522229CB898B00666B55 /* ExtraButton.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -397,7 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E598C21329BF8F6C000DCD95 /* RootViewController.swift in Sources */,
-				E509522329CB898B00666B55 /* AuthButton.swift in Sources */,
+				E509522329CB898B00666B55 /* ExtraButton.swift in Sources */,
 				E509521D29C240B300666B55 /* AuthTextField.swift in Sources */,
 				E509521829C1052100666B55 /* HideButton.swift in Sources */,
 				E50951E929BF93C600666B55 /* UIColor-extension.swift in Sources */,

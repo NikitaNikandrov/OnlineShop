@@ -7,10 +7,10 @@
 
 import UIKit
 
-final class AuthButton: UIButton {
-    init(title: String, image: UIColor, fontSize: CGFloat) {
+final class ExtraButton: UIButton {
+    init(title: String, color: UIColor, fontSize: CGFloat) {
         super.init(frame: .zero)
-        setUpButton(title: title, color: image, fontSize: fontSize)
+        setUpButton(title: title, color: color, fontSize: fontSize)
     }
     
     @available(*,unavailable)

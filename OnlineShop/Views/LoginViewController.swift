@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
     private let titleLabel = TitleLabel(text: Resources.LoginStrings.titleString)
     private let firstNameTextField = AuthTextField(placeholder: Resources.LoginStrings.firstNameTextHolderString)
     private let passwordTextField = AuthTextField(placeholder: Resources.LoginStrings.passwordTextHolderString)
-    private let loginButton = LogButton(title: Resources.LoginStrings.loginButtonString)
+    private let logInButton = LogButton(title: Resources.LoginStrings.loginButtonString)
     private let hideButton = HideButton()
     
     //MARK: Button's actions
@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
         view.addSubview(passwordTextField)
         setPasswordTextFieldConstraints()
         
-        view.addSubview(loginButton)
+        view.addSubview(logInButton)
         setLoginButtonConstraints()
         addTargets()
     }
@@ -59,7 +59,7 @@ class LoginViewController: UIViewController {
     
     private func addTargets() {
         hideButton.addTarget(self, action: #selector(hideButtonIsPressed), for: .touchUpInside)
-        loginButton.addTarget(self, action: #selector(loginButtonIsPressed), for: .touchUpInside)
+        logInButton.addTarget(self, action: #selector(loginButtonIsPressed), for: .touchUpInside)
     }
 }
 
@@ -90,11 +90,11 @@ extension LoginViewController {
     }
     
     private func setLoginButtonConstraints() {
-        loginButton.translatesAutoresizingMaskIntoConstraints = false
-        loginButton.heightAnchor.constraint(equalToConstant: 47.8).isActive = true
-        loginButton.widthAnchor.constraint(equalToConstant: 300.6).isActive = true
-        loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 103).isActive = true
-        loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        logInButton.translatesAutoresizingMaskIntoConstraints = false
+        logInButton.heightAnchor.constraint(equalToConstant: 47.8).isActive = true
+        logInButton.widthAnchor.constraint(equalToConstant: 300.6).isActive = true
+        logInButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 103).isActive = true
+        logInButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
     }
 }
 

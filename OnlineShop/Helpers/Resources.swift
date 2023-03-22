@@ -36,5 +36,9 @@ enum Resources {
         static var lastNameTextHolderString = "Last name"
         static var emailTextHolderString = "Email"
         static var sigInButtonString = "Sign in"
+        static var logInButtonString = "Log in"
+        static var messageString = "Already have an account?"
+        static var googleString = "Sign in with Google"
+        static var appleString = "Sign in with Apple"
     }
 }
