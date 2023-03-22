@@ -9,57 +9,10 @@ import UIKit
 
 class LoginViewController: UIViewController {
     //MARK: Constants
-    private let titleLabel: UILabel = {
-        let label = UILabel()
-        label.text = Resources.LoginStrings.titleString
-        label.textColor = Resources.Colors.black
-        label.font = UIFont(name: Resources.Fonts.montserratBold, size: 20.3)
-        label.textAlignment = .center
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    
-    private let firstNameTextField: UITextField = {
-        var textField = UITextField()
-        textField.attributedPlaceholder = NSAttributedString( string: Resources.LoginStrings.firstNameTextHolderString,
-                                                              attributes: [NSAttributedString.Key.foregroundColor: Resources.Colors.grey,
-                                                                           .font: UIFont(name: Resources.Fonts.montserratRegular,
-                                                                                         size: 8.7) ?? UIFont.systemFont(ofSize: 8.7, weight:           .regular)])
-        textField.textAlignment = .center
-        textField.backgroundColor = Resources.Colors.lightGrey
-        textField.textColor = Resources.Colors.grey
-        textField.layer.cornerRadius = 15.5
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        return textField
-    }()
-    
-    private let passwordTextField: UITextField = {
-        var textField = UITextField()
-        textField.attributedPlaceholder = NSAttributedString( string: Resources.LoginStrings.passwordTextHolderString,
-                                                              attributes: [NSAttributedString.Key.foregroundColor: Resources.Colors.grey,
-                                                                           .font: UIFont(name: Resources.Fonts.montserratRegular,
-                                                                                         size: 8.7) ?? UIFont.systemFont(ofSize: 8.7, weight:           .regular)])
-        textField.textAlignment = .center
-        textField.backgroundColor = Resources.Colors.lightGrey
-        textField.textColor = Resources.Colors.grey
-        textField.layer.cornerRadius = 15.5
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        return textField
-    }()
-    
-    private let loginButton: UIButton = {
-        var button = UIButton()
-        button.backgroundColor = Resources.Colors.purple
-        let buttonLabelAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: Resources.Colors.white,
-                                                                    .font: UIFont(name: Resources.Fonts.montserratBold,
-                                                                                  size: 14.4) ?? UIFont.systemFont(ofSize: 14.4, weight:           .regular)]
-        let attributeString = NSMutableAttributedString(string: Resources.LoginStrings.loginButtonString, attributes: buttonLabelAttributes)
-        button.setAttributedTitle(attributeString, for: .normal)
-        button.layer.cornerRadius = 15
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
-    
+    private let titleLabel = TitleLabel(text: Resources.LoginStrings.titleString)
+    private let firstNameTextField = AuthTextField(placeholder: Resources.LoginStrings.firstNameTextHolderString)
+    private let passwordTextField = AuthTextField(placeholder: Resources.LoginStrings.passwordTextHolderString)
+    private let loginButton = LogButton(title: Resources.LoginStrings.loginButtonString)
     private let hideButton = HideButton()
     
     //MARK: Button's actions
@@ -103,6 +56,7 @@ class LoginViewController: UIViewController {
         passwordTextField.rightView = rightView
         passwordTextField.rightViewMode = .always
     }
+    
     private func addTargets() {
         hideButton.addTarget(self, action: #selector(hideButtonIsPressed), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(loginButtonIsPressed), for: .touchUpInside)
@@ -112,6 +66,7 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     
     private func setTitleLabelConstraints() {
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.heightAnchor.constraint(equalToConstant: 25).isActive = true
         titleLabel.widthAnchor.constraint(equalToConstant: 250).isActive = true
         titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 168.5).isActive = true
@@ -119,6 +74,7 @@ extension LoginViewController {
     }
     
     private func setFirstNameTextFieldConstraints() {
+        firstNameTextField.translatesAutoresizingMaskIntoConstraints = false
         firstNameTextField.heightAnchor.constraint(equalToConstant: 31).isActive = true
         firstNameTextField.widthAnchor.constraint(equalToConstant: 301).isActive = true
         firstNameTextField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 84).isActive = true
@@ -126,6 +82,7 @@ extension LoginViewController {
     }
     
     private func setPasswordTextFieldConstraints() {
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.heightAnchor.constraint(equalToConstant: 31).isActive = true
         passwordTextField.widthAnchor.constraint(equalToConstant: 301).isActive = true
         passwordTextField.topAnchor.constraint(equalTo: firstNameTextField.bottomAnchor, constant: 36.4).isActive = true
@@ -133,6 +90,7 @@ extension LoginViewController {
     }
     
     private func setLoginButtonConstraints() {
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.heightAnchor.constraint(equalToConstant: 47.8).isActive = true
         loginButton.widthAnchor.constraint(equalToConstant: 300.6).isActive = true
         loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 103).isActive = true

@@ -29,4 +29,12 @@ enum Resources {
         static var passwordTextHolderString = "Password"
         static var loginButtonString = "Login"
     }
+    
+    enum SignInStrings {
+        static var titleString = "Sign in"
+        static var firstNameTextHolderString = "First name"
+        static var lastNameTextHolderString = "Last name"
+        static var emailTextHolderString = "Email"
+        static var sigInButtonString = "Sign in"
+    }
 }

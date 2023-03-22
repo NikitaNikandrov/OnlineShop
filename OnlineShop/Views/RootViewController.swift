@@ -13,7 +13,7 @@ class RootViewController: UIViewController {
     
     //MARK: Init
     init() {
-        self.current = LoginViewController()
+        self.current = SignInViewController()
         super.init(nibName: nil, bundle: nil)
     }
     
