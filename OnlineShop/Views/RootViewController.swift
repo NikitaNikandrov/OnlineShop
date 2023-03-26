@@ -13,7 +13,7 @@ class RootViewController: UIViewController {
     
     //MARK: Init
     init() {
-        self.current = SignInViewController()
+        self.current = TabBarController()
         super.init(nibName: nil, bundle: nil)
     }
     

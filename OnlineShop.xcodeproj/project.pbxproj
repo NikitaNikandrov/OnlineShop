@@ -33,6 +33,14 @@
 		E509521F29CB7F4700666B55 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509521E29CB7F4600666B55 /* TitleLabel.swift */; };
 		E509522129CB846900666B55 /* LogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509522029CB846900666B55 /* LogButton.swift */; };
 		E509522329CB898B00666B55 /* ExtraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509522229CB898B00666B55 /* ExtraButton.swift */; };
+		E509522629D0666700666B55 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509522529D0666700666B55 /* TabBarController.swift */; };
+		E509522929D0750800666B55 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509522829D0750800666B55 /* MainScreenViewController.swift */; };
+		E509522B29D0752F00666B55 /* FavoritsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509522A29D0752F00666B55 /* FavoritsViewController.swift */; };
+		E509522D29D0756D00666B55 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509522C29D0756D00666B55 /* BasketViewController.swift */; };
+		E509522F29D0759A00666B55 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509522E29D0759A00666B55 /* MessageViewController.swift */; };
+		E509523129D075BE00666B55 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509523029D075BE00666B55 /* ProfileViewController.swift */; };
+		E509523329D075EE00666B55 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509523229D075EE00666B55 /* BaseViewController.swift */; };
+		E509523629D0769B00666B55 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509523529D0769B00666B55 /* NavigationController.swift */; };
 		E598C1DF29BF8BF9000DCD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1DE29BF8BF9000DCD95 /* AppDelegate.swift */; };
 		E598C1E129BF8BF9000DCD95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1E029BF8BF9000DCD95 /* SceneDelegate.swift */; };
 		E598C1E329BF8BF9000DCD95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598C1E229BF8BF9000DCD95 /* LoginViewController.swift */; };
@@ -89,6 +97,14 @@
 		E509521E29CB7F4600666B55 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		E509522029CB846900666B55 /* LogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogButton.swift; sourceTree = "<group>"; };
 		E509522229CB898B00666B55 /* ExtraButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraButton.swift; sourceTree = "<group>"; };
+		E509522529D0666700666B55 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E509522829D0750800666B55 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		E509522A29D0752F00666B55 /* FavoritsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritsViewController.swift; sourceTree = "<group>"; };
+		E509522C29D0756D00666B55 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		E509522E29D0759A00666B55 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		E509523029D075BE00666B55 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E509523229D075EE00666B55 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E509523529D0769B00666B55 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		E598C1DB29BF8BF9000DCD95 /* OnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E598C1DE29BF8BF9000DCD95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E598C1E029BF8BF9000DCD95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +200,33 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
+		E509522429D0662D00666B55 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E509522529D0666700666B55 /* TabBarController.swift */,
+				E509523229D075EE00666B55 /* BaseViewController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		E509522729D0748100666B55 /* AuthVCs */ = {
+			isa = PBXGroup;
+			children = (
+				E509521929C10EB800666B55 /* SubViews */,
+				E598C1E229BF8BF9000DCD95 /* LoginViewController.swift */,
+				E509521A29C23C0F00666B55 /* SignInViewController.swift */,
+			);
+			path = AuthVCs;
+			sourceTree = "<group>";
+		};
+		E509523429D0765F00666B55 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				E509523529D0769B00666B55 /* NavigationController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
 		E598C1D229BF8BF9000DCD95 = {
 			isa = PBXGroup;
 			children = (
@@ -240,10 +283,15 @@
 		E598C21129BF8F48000DCD95 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E509521929C10EB800666B55 /* SubViews */,
+				E509522729D0748100666B55 /* AuthVCs */,
+				E509523429D0765F00666B55 /* NavigationController */,
+				E509522429D0662D00666B55 /* TabBarController */,
 				E598C21229BF8F6C000DCD95 /* RootViewController.swift */,
-				E509521A29C23C0F00666B55 /* SignInViewController.swift */,
-				E598C1E229BF8BF9000DCD95 /* LoginViewController.swift */,
+				E509522829D0750800666B55 /* MainScreenViewController.swift */,
+				E509522A29D0752F00666B55 /* FavoritsViewController.swift */,
+				E509522C29D0756D00666B55 /* BasketViewController.swift */,
+				E509522E29D0759A00666B55 /* MessageViewController.swift */,
+				E509523029D075BE00666B55 /* ProfileViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -396,18 +444,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E509522D29D0756D00666B55 /* BasketViewController.swift in Sources */,
 				E598C21329BF8F6C000DCD95 /* RootViewController.swift in Sources */,
 				E509522329CB898B00666B55 /* ExtraButton.swift in Sources */,
 				E509521D29C240B300666B55 /* AuthTextField.swift in Sources */,
 				E509521829C1052100666B55 /* HideButton.swift in Sources */,
+				E509523329D075EE00666B55 /* BaseViewController.swift in Sources */,
+				E509522B29D0752F00666B55 /* FavoritsViewController.swift in Sources */,
 				E50951E929BF93C600666B55 /* UIColor-extension.swift in Sources */,
+				E509522929D0750800666B55 /* MainScreenViewController.swift in Sources */,
 				E509521F29CB7F4700666B55 /* TitleLabel.swift in Sources */,
+				E509523129D075BE00666B55 /* ProfileViewController.swift in Sources */,
 				E50951EB29BF97D000666B55 /* Resources.swift in Sources */,
+				E509522F29D0759A00666B55 /* MessageViewController.swift in Sources */,
 				E598C1E329BF8BF9000DCD95 /* LoginViewController.swift in Sources */,
 				E509521B29C23C0F00666B55 /* SignInViewController.swift in Sources */,
 				E509522129CB846900666B55 /* LogButton.swift in Sources */,
 				E598C1DF29BF8BF9000DCD95 /* AppDelegate.swift in Sources */,
+				E509522629D0666700666B55 /* TabBarController.swift in Sources */,
 				E598C1E929BF8BF9000DCD95 /* OnlineShop.xcdatamodeld in Sources */,
+				E509523629D0769B00666B55 /* NavigationController.swift in Sources */,
 				E598C1E129BF8BF9000DCD95 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
