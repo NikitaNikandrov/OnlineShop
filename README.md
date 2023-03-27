@@ -1,6 +1,6 @@
 # OnlineShop
 
-It is an test application for iOS developer position
+It is the test application for iOS developer position
 
 Development is in progress now
 
